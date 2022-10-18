@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    min-height: 100vh;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a,
+button {
+    cursor: revert;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: block;
+    height: 100%;
+}
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    margin: 30px 40px;
+    padding: 5px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 25pt;
+    margin-bottom: 10px;
+    color: darkorange;
+    outline: 0;
+    touch-action: manipulation;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 20pt;
+    border: 1px black;
+    border-radius: 10px;
+    width: 80%;
+    align-items: center;
+}
+
+.search input#search {
+    width: 100%;
+    height: 100%;
+    float: left;
+    border: 3px solid yellow;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.search input#search:focus {
+    border: 3px solid yellow;
+    outline: 0;
+}
+
+.search img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.button {
+    background-color: yellow;
+    border: yellow;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 22px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.links {
+    margin: 30px 40px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.footer_link {
+    margin: 0 10px;
+    width: auto;
+    font-size: 20px;
+    color: orange;
+}
+
+
+@media screen and (min-width: 150px) and (max-width: 860px) {
+    body {
+        font-size: 13px;
+    }
+    .page_header {
+        justify-content: center;
+    }
+
+    .search {
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+    }
+}
