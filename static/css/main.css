@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+
+html {
+    display: block;
+    height: 100%;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.2;
     width: 100%;
-    min-height: 100vh;
-}
-
-html,
-body {
-    height: 100%;
+    min-height: 100%;
+    height: auto;
 }
 
 * {
@@ -32,15 +34,12 @@ a {
 
 .container {
     display: block;
-    height: 100%;
 }
 
 .page_header {
     display: flex;
-    justify-content: space-between;
     background-color: transparent;
-    margin: 30px 40px;
-    padding: 5px;
+    padding: 30px 40px;
     height: auto;
     flex-wrap: wrap;
 }
@@ -48,9 +47,14 @@ a {
 .logo {
     font-size: 25pt;
     margin-bottom: 10px;
-    color: darkorange;
+    margin-right: 20px;
+    width: 100px;
+    height: 43px;
+    color: #000;
+    font-weight: bold;
     outline: 0;
     touch-action: manipulation;
+    background: url(https://yastatic.net/s3/home-static/_/Y/m/iYFGil-w8xoq_2OQvnXq6EwLY.svg) 50% 50% no-repeat;
 }
 
 .search {
@@ -59,7 +63,6 @@ a {
     vertical-align: middle;
     white-space: nowrap;
     font-size: 20pt;
-    border: 1px black;
     border-radius: 10px;
     width: 80%;
     align-items: center;
@@ -69,7 +72,7 @@ a {
     width: 100%;
     height: 100%;
     float: left;
-    border: 3px solid yellow;
+    border: 3px solid #fc0;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding-left: 10px;
@@ -78,20 +81,13 @@ a {
 }
 
 .search input#search:focus {
-    border: 3px solid yellow;
+    border: 3px solid #fc0;
     outline: 0;
 }
 
-.search img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
 .button {
-    background-color: yellow;
-    border: yellow;
+    background-color: #fc0;
+    border: #fc0;
     height: 100%;
     padding: 0 10px;
     font-size: 22px;
@@ -101,6 +97,12 @@ a {
 
 .button:hover {
     cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    left: 18px;
+    bottom: 25px;
 }
 
 .footer_links {
@@ -114,59 +116,66 @@ a {
 .footer_link {
     margin: 0 10px;
     width: auto;
-    font-size: 20px;
-    color: orange;
+    font-size: 1em;
+    color: #999;
 }
 
 .content {
+    padding-left: 166px;
     box-sizing: border-box;
-    min-height: 100%;
+    min-height: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
 .content_title_block {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
 }
 
 .content_title {
-    font-size: 3em;
-    color: darkorange;
-    margin-bottom: 20px;
+    font-size: 1.625em;
+    margin: 0 0 10px;
 }
 
 .content_description {
-    font-size: 1.4em;
-    margin: 0 10px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .content_links {
     display: flex;
-    margin: 10px 40px;
+    margin: 10px -10px;
     width: 80%;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .content_link {
     width: auto;
     margin-right: 7px;
     font-size: 1.1em;
-    color: orange;
+    color: #0054b9;
+}
+
+.content_description_link {
+    width: auto;
+    font-size: 1.1em;
+    color: #0054b9;
 }
 
 .content_link_prescription {
     font-size: 1.1em;
+    margin-right: 30px;
 }
 
 .service_icon {
     user-select: none;
     margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .content_link_block {
@@ -174,6 +183,34 @@ a {
     flex-direction: row;
     align-items: center;
     margin: 0 10px;
+}
+
+.services_icon_plus {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/plus1.svg);
+}
+
+.services_icon_market {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/market_new2022.svg);
+}
+
+.services_icon_praktikum {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/praktikum0.svg);
+}
+
+.services_icon_kinopoisk_old {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/kinopoisk_2021_v2.svg);
+}
+
+.services_icon_edadeal {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/edadeal_new.svg);
+}
+
+.services_icon_games {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/games_new_v2.svg);
+}
+
+.services_icon_music {
+    background-image: url(//yastatic.net/s3/home/services/all/svg/music_new.svg);
 }
 
 @media screen and (min-width: 150px) and (max-width: 860px) {
@@ -185,6 +222,15 @@ a {
         justify-content: center;
     }
 
+    .content {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .content_link_prescription {
+        margin-right: 0;
+    }
+
     .search {
         justify-content: center;
         width: 100%;
@@ -192,6 +238,6 @@ a {
     }
 
     .content_links {
-        width: 90%;
+        width: 100%;
     }
 }
