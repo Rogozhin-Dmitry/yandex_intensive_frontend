@@ -6,87 +6,72 @@
     <link href="static/css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="static/icons/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="container" id="container">
-        <header class="page_header" id="page_header">
-            <a href="#" class="logo">Your Logo</a>
-            <div class="search">
-                <input type="search" id="search" placeholder="Идёт поиск....." />
-                <button id="search_button" class="button">Найти<img src="static/icons/search.svg" alt=""></button>
+    <div class="container">
+        <div class="content">
+            <header class="page_header" id="page_header">
+                <a href="#" class="logo"></a>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Найдётся всё"/>
+                    <button id="search_button" class="button">Найти</button>
+                </div>
+            </header>
+            <div class="content_title_block">
+                <h1 class="content_title">Ошибка 404. Нет такой страницы</h1>
+                <div class="content_description">Если вы считаете, что страницы нет по нашей вине, <a href="#" class="content_description_link">напишите нам</a>.</div>
             </div>
-        </header>
-        <div class="container">
-            <div class="content">
-                <div class="content_title_block">
-                    <h1 class="content_title">Некое заглавие</h1>
-                    <p class="content_description">Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</p>
+            <div class="content_links">
+                <div class="content_link_block">
+                    <i class="services_icon_games service_icon"></i>
+                    <a href="#" class="content_link">Игры</a>
+                    <p class="content_link_prescription">— популярные головоломки</p>
                 </div>
-                <div class="content_links">
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon">cloud</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 1</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon">favorite</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 2</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                </div>
-                <div class="content_links">
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon">cloud</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 1</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon">favorite</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 2</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                </div>
-                <div class="content_links">
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon">attachment</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 3</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon">computer</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 4</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                </div>
-                <div class="content_links">
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon">traffic</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 5</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon" style="color:orange;">favorite</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 6</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
-                </div>
-                <div class="content_links">
-                    <div class="content_link_block">
-                        <i class="material-icons service_icon" style="color:orange;">computer</i>
-                        <a href="#" target="_blank" class="content_link">Сервис 7</a>
-                        <p class="content_link_prescription"> Описание описание описание</p>
-                    </div>
+                <div class="content_link_block">
+                    <i class="services_icon_music service_icon"></i>
+                    <a href="#" class="content_link">Музыка</a>
+                    <p class="content_link_prescription">— подкасты обо всём</p>
                 </div>
             </div>
-            <footer>
-                <div class="footer-links" id="footer-links">
-                    <a href="#" target="_blank" class="footer_link">ссылка 1</a>
-                    <a href="#" target="_blank" class="footer_link">ссылка 2</a>
-                    <a href="#" target="_blank" class="footer_link">ссылка 3</a>
+            <div class="content_links">
+                <div class="content_link_block">
+                    <i class="services_icon_edadeal service_icon"></i>
+                    <a href="#" class="content_link">Едадил</a>
+                    <p class="content_link_prescription">— экономьте на продуктах</p>
                 </div>
-            </footer>
+                <div class="content_link_block">
+                    <i class="services_icon_kinopoisk_old service_icon"></i>
+                    <a href="#" class="content_link">Кинопоиск</a>
+                    <p class="content_link_prescription">— «Нулевой пациент»</p>
+                </div>
+            </div>
+            <div class="content_links">
+                <div class="content_link_block">
+                    <i class="services_icon_praktikum service_icon"></i>
+                    <a href="#" class="content_link">Практикум</a>
+                    <p class="content_link_prescription">— получить профессию</p>
+                </div>
+                <div class="content_link_block">
+                    <i class="services_icon_market service_icon"></i>
+                    <a href="#" class="content_link">Маркет</a>
+                    <p class="content_link_prescription">— люстры и светильники</p>
+                </div>
+            </div>
+            <div class="content_links">
+                <div class="content_link_block">
+                    <i class="services_icon_plus service_icon"></i>
+                    <a href="#" class="content_link">Плюс</a>
+                    <p class="content_link_prescription">— подписка для четверых</p>
+                </div>
+            </div>
         </div>
+        <footer>
+            <div class="footer-links" id="footer-links">
+                <a href="#" class="footer_link">Компания</a>
+                <a href="#" class="footer_link">About</a>
+                <a href="#" class="footer_link">© Яндекс</a>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
