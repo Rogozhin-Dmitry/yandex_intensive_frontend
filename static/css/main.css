@@ -68,8 +68,12 @@ a {
     flex-direction: row;
     vertical-align: middle;
     white-space: nowrap;
-    width: 80%;
+    width: 77%;
     align-items: center;
+}
+
+section {
+    width: 100%;
 }
 
 .search input#search {
